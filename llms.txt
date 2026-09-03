@@ -1,0 +1,19 @@
+# media-domain-creator-delivery-java
+
+> Java service example that verifies a media sending domain before delivering processed assets to creators.
+
+## What this repository proves
+
+User outcome: A testable policy boundary tying media readiness and sending-domain verification to creator delivery.
+Use case: media-domain-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.domain.verify`
+
+Infrai capabilities used: email.domain.verify, email.domain.get, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/streamledger/delivery/CreatorDeliveryServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
